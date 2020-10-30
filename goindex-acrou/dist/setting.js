@@ -20,7 +20,7 @@ var authConfig = {
 };
 var themeOptions = {
   // en/zh-chs/zh-cht
-  languages: "es",
+  languages: "en",
   render: {
     head_md: true,
     readme_md: true,
