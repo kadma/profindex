@@ -3,7 +3,7 @@
 
 
 
-# GoIndex-theme-acrou 
+# Profindex - Goindex tema oscuro en español
 Combining the power of [Cloudflare Workers](https://workers.cloudflare.com/) and [Google Drive](https://www.google.com/drive/) will allow you to index you files on the browser on Cloudflare Workers.    
 
 [go2index/index.js](https://github.com/Aicirou/goindex-theme-acrou/go2index) is the content of the Workers script.  
@@ -38,9 +38,7 @@ Acrou: [https://oss.achirou.workers.dev/](https://oss.achirou.workers.dev/)
 
 1. Open any of the following links
 
-   - https://install.achirou.workers.dev
-   - https://goindex-quick-install.glitch.me
-   - https://goindex-install.herokuapp.com
+   - https://profindex.glitch.me/
 
 2. Auth and get the code  
 
