@@ -49,9 +49,6 @@ Simply visit [this](https://creador.gd0.me/) Modified (only for Dark Mode) versi
 ### [Thumbnail View - Dark Mode](https://goindex.teamsdrives.workers.dev)
 ![goindex-thumbnail](https://i.imgur.com/crg4dGp.gif)
 
-### Toggle View
-![goindex-toggle-view](https://i.imgur.com/RdvgfIf.png)
-
 
 
 ## Deployment  
@@ -68,22 +65,6 @@ Get free Google Shared Drives
 -https://avcen.tech/
 
 
-
-Go to [https://workers.cloudflare.com/]
-
-signup using email and password
-enter a subdomain [____.workers.dev] ---> Set up
-
-Choose Workers Plan (FREE)
-- FREE - 10000 request/day
-- $5/month - 10M requests/month
-  
-Verify Email
-Goto Workers ---> "Create a Worker"
-
-Now copy the Content of the `index.js` to the script section
-
-Edit this object in the script with the details you generated above
 
 
 ## Credits - Original Authors
