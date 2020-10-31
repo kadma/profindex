@@ -41,7 +41,7 @@ var authConfig = {
 var themeOptions = {
   cdn: "https://cdn.jsdelivr.net/gh/kadma/profindex",
   
-  version: "0.1.4",
+  version: "0.1.5",
   
   languages: "es",
   render: {
