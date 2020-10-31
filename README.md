@@ -1,139 +1,78 @@
-# profindex
- Mi index personal
+<div align="center">
+<h1>profindex</h1>
+<img src="https://github.com/alx-xlx/goindex/raw/master/themes/logo.png" alt="profindex" height="">
+
+</div>
+<div align="center">
+
+<img alt="goindex-license" src="https://img.shields.io/badge/Open_source-MIT-red.svg?logo=git&logoColor=green"/>
+<img alt="goindex-softwareheritage.org" src="https://archive.softwareheritage.org/badge/origin/https://github.com/Unipisa/CMM/"/>
+<img alt="Principal" src="https://img.shields.io/github/repo-size/alx-xlx/goindex">
 
 
+</div>
 
-# Profindex - Goindex tema oscuro en español
+---
+
+Google Drive Directory Index  
 Combining the power of [Cloudflare Workers](https://workers.cloudflare.com/) and [Google Drive](https://www.google.com/drive/) will allow you to index you files on the browser on Cloudflare Workers.    
 
-[go2index/index.js](https://github.com/Aicirou/goindex-theme-acrou/go2index) is the content of the Workers script.  
+`index.js` is the content of the Workers script.  
 
 Basado en  [yanzai/goindex](https://github.com/yanzai/goindex/)
 y [alx-xlx/goindex](https://github.com/alx-xlx/goindex)
 
-## Demo  
+# Versions
 
-Acrou: [https://oss.achirou.workers.dev/](https://oss.achirou.workers.dev/) 
 
-## Features
+## 1. [Aicirou/goindex-theme-acrou](https://github.com/Aicirou/goindex-theme-acrou)
 
-- [x] 👑 Page-level caching,browser forward and backward without reloading (MAC users have a better experience with the trackpad)
-- [x] 🗂 Multi drive switching
-- [x] 🔐 Http Basic Auth
-- [x] 🎨 Grid view mode(File Preview)
-- [x] 🎯 Paging load
-- [x] 🌐 I18n(multi-language)
-- [x] 🛠 Markdown/Html render (Maybe it can be your blog)
-- [x] 🖥 Video Online(.vtt subtitle)
-- [x] 🕹 Support for custom video player (API)
-- [x] 🎧 Audio Online
-- [x] 🚀 Faster speed
 
-## TODO
+Worker Script (Dark Mode) : [index.js](https://raw.githubusercontent.com/alx-xlx/goindex/31fabf3d7ff221ff34aaaf23e63a1a5a49e40b4f/goindex-acrou/go2index/index.js)
 
-- [ ] More file format preview
-- [ ] Let goindex be more than just a directory index
+Worker Script (Multiple Google Accounts) : [index-multiple-accounts.js](https://github.com/alx-xlx/goindex/blob/master/goindex-acrou/go2index/index-multiple-accounts.js)
 
-## Quick Deployment
+Demo - [goindex.teamsdrives.workers.dev](https://goindex.teamsdrives.workers.dev)
 
-1. Open any of the following links
+Copy the [index.js](https://raw.githubusercontent.com/alx-xlx/goindex/31fabf3d7ff221ff34aaaf23e63a1a5a49e40b4f/goindex-acrou/go2index/index.js) script to [workers.dev](https://workers.cloudflare.com/) and edit `client_id`, `client_secret`, `refresh_token` with yours
 
-   - https://profindex.glitch.me/
+OR
 
-2. Auth and get the code  
+### GoIndex Auto Code Builder
+https://creador.gd0.me/
 
-3. Deploy the code to [Cloudflare Workers](https://www.cloudflare.com/)
+Simply visit [this](https://creador.gd0.me/) Modified (only for Dark Mode) version to automatically generate your `index.js` without having to manually edit anything.
+
+### [List View - Dark Mode](https://goindex.teamsdrives.workers.dev)
+![goindex-list](https://i.imgur.com/Y9pJo1V.png)
+
+### [Thumbnail View - Dark Mode](https://goindex.teamsdrives.workers.dev)
+![goindex-thumbnail](https://i.imgur.com/crg4dGp.gif)
+
+
 
 ## Deployment  
+1.Install `rclone` software locally  
+2.Follow [https://rclone.org/drive/]( https://rclone.org/drive/) bind a drive  
+3.Execute the command`rclone config file` to find the file `rclone.conf` path  
+4.Open `rclone.conf`,find the configuration `root_folder_id` and `refresh_token`  
+5.Download index.js in https://github.com/donwa/goindex and fill in root and refresh_token  
+6.Deploy the code to [Cloudflare Workers](https://www.cloudflare.com/)
 
-1. Open [Google Drive API](https://console.developers.google.com/apis/api/drive.googleapis.com/overview)
-2. Create a [OAuth client ID](https://console.developers.google.com/apis/credentials/oauthclient)
-3. Install [rclone](https://rclone.org/downloads/) software locally
-4. Get `refresh_token ` with `rclone`
-5. Download `index.js` in https://github.com/Aicirou/goindex-theme-acrou/tree/master/go2index and replace `client_id`,`client_secret`,`refresh_token` for what you just got.
-6. Deploy the code to [Cloudflare Workers](https://www.cloudflare.com/)
+## Free Teamdrives
+Get free Google Shared Drives
 
-> If you write a good article and want to share it with others, please submit Issues and I will post the link here.
-
-## Options
-
-### Video
-
-| Option       | Type                       | Default                                                      | Description                                                  |
-| ------------ | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `api`        | String                     | `''`                                                         | External video player api. When this value is not null, all of the following options do not work |
-| `autoplay`   | Boolean                    | `true`                                                       | When set to true, the video plays automatically, depending on whether the browser supports the |
-| `invertTime` | Boolean                    | `false`                                                      | Display the current time as a countdown rather than an incremental counter. |
-| `controls`   | Array, Function or Element | `['play-large', 'restart', 'play', 'progress', 'current-time', 'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'download', 'fullscreen']` | Which buttons are displayed in the control bar. See more [CONTROLS.md](https://github.com/sampotts/plyr/blob/master/CONTROLS.md#using-default-controls) |
-| `settings`   | Array                      | `['quality', 'speed', 'loop']`                               | You can specify which settings to show in the menu           |
-
-For more option, see plyr [options](https://github.com/sampotts/plyr#options)
-
-### Audio
-
-| Option      | Type    | Default    | Description                                                  |
-| ----------- | ------- | ---------- | ------------------------------------------------------------ |
-| `container` | String  | `.aplayer` | No support for changes                                       |
-| `fixed`     | Boolean | `true`     | No support for changes                                       |
-| `autoplay`  | Boolean | `false`    | audio autoplay                                               |
-| `loop`      | String  | `'all'`    | player loop play, values: 'all', 'one', 'none'               |
-| `order`     | String  | `'list'`   | player play order, values: 'list', 'random'                  |
-| `preload`   | String  | `'auto'`   | values: 'none', 'metadata', 'auto'                           |
-| `volume`    | Number  | `0.7`      | default volume, notice that player will remember user setting, default volume will not work after user set volume themselves |
-| `audios`    | Array   | `[]`       | Playlists can be preset. [FAQ](#FAQ)                         |
-
-For more option, see APlayer [options](https://aplayer.js.org/#/home?id=options)
-
-## FAQ
-
-> How do I change the way the list is sorted?
-
-Modify line 636 of the code or search for `params.orderBy`
-
-```javascript
-－ params.orderBy = "folder,name,modifiedTime desc";
-＋ params.orderBy = "modifiedTime desc";
-```
-
-> How to preset an audio playlist?
-
-Audio option add `audios`
-
-```
-audio: {
-  audios: [
-    {
-      name: "Mojito",
-      artist: "周杰伦",
-      url: "https://xx.mp3",
-      lrc: "https://xx.lrc",
-      cover: "https://xx.jpg"
-    }
-  ]
-}
-```
+-https://avcen.tech/
 
 
 
-## Change log
 
-### v2.0.8
+## Credits - Original Authors
 
-- Fix image file actions does not work [#100](https://github.com/Aicirou/goindex-theme-acrou/issues/100)
-- Fix misjudged file to image format [#88](https://github.com/Aicirou/goindex-theme-acrou/issues/88)
-- Fix more than 10 drive not working [#59](https://github.com/Aicirou/goindex-theme-acrou/issues/59) [#85](https://github.com/Aicirou/goindex-theme-acrou/issues/85)
-- Fix some of the operation functions in the search list cannot be used
-- Fix text cache content not refreshing
-- Add video default player([plyr](https://github.com/sampotts/plyr)) [#22](https://github.com/Aicirou/goindex-theme-acrou/issues/22) [#38](https://github.com/Aicirou/goindex-theme-acrou/issues/38)
-- Add audio player ([APlayer](https://github.com/MoePlayer/APlayer)) [#77](https://github.com/Aicirou/goindex-theme-acrou/issues/77)
-- Add copy button to video page
-- Add [NProgress](https://github.com/rstacruz/nprogress)
-- Add language cache cleanup
-- Add shortcut can't download tip [#76](https://github.com/Aicirou/goindex-theme-acrou/issues/76)
-- Markdown displays rendered html by default
-- CLI Delete prefetch preload of lazy load module
-- Delete fontawesome5
+goindex-theme-acrou - [Aicirou](https://github.com/Aicirou/goindex-theme-acrou)
 
+GDIndex - [maple3142](https://github.com/maple3142/GDIndex)
 
-[MIT](LICENSE)
+goindex - [donwa](https://github.com/donwa/goindex)
 
+goindex tema - [alx-xlx](https://github.com/alx-xlx/goindex)
