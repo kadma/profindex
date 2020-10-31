@@ -1,13 +1,13 @@
-
+// =======Options START=======
 var authConfig = {
-  siteName: "goindex", 
+  siteName: "profindex", 
   version: "0.1.1", 
   theme: "acrou",
   
   client_id: "202264815644.apps.googleusercontent.com",
   client_secret: "X4Z3ca8xfWDb1Voo-F9a7ZxJ",
   refresh_token: "", 
- 
+  
   roots: [
     {
       id: "",
@@ -28,55 +28,37 @@ var authConfig = {
     },
   ],
   default_gd: 0,
-
+  
   files_list_page_size: 50,
-
+  
   search_result_list_page_size: 50,
   
   enable_cors_file_down: false,
-
+  
   enable_password_file_verify: false,
 };
 
 var themeOptions = {
   cdn: "https://cdn.jsdelivr.net/gh/kadma/profindex",
   
-  version: "0.1.5",
+  version: "0.1.2",
   
   languages: "es",
   render: {
-    /**
-     * 是否渲染HEAD.md文件
-     * Render HEAD.md file
-     */
+    
     head_md: false,
-    /**
-     * 是否渲染README.md文件
-     * Render README.md file
-     */
+    
     readme_md: false,
-    /**
-     * 是否渲染文件/文件夹描述
-     * Render file/folder description or not
-     */
+    
     desc: false,
   },
-  /**
-   * 视频播放器选项
-   * Video player options
-   */
+  
   video: {
-    /**
-     * 播放器api（不指定则使用默认播放器）
-     * Player api(Use default player if not specified)
-     */
+    
     api: "",
-    autoplay: true,
+    autoplay: false,
   },
-  /**
-   * 音频播放器选项
-   * Audio player options
-   */
+  
   audio: {},
 };
 // =======Options END=======
