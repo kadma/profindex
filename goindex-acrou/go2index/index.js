@@ -40,9 +40,9 @@ var authConfig = {
 
 var themeOptions = {
   cdn: "https://cdn.jsdelivr.net/gh/kadma/profindex",
-  
+
   version: "0.1.6",
-  
+
   languages: "es",
   render: {
     
@@ -61,9 +61,15 @@ var themeOptions = {
   
   audio: {},
 };
+// =======Options END=======
 
+/**
+ * global functions
+ */
 const FUNCS = {
-
+  /**
+   * 转换成针对谷歌搜索词法相对安全的搜索关键词
+   */
   formatSearchKeyword: function(keyword) {
     let nothing = "";
     let space = " ";
