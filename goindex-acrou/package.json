@@ -1,7 +1,7 @@
 {
   "name": "profindex",
-  "version": "0.1.9df",
-  "g2index": "0.1.9df",
+  "version": "0.2.0a",
+  "g2index": "0.2.0a",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
