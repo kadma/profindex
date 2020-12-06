@@ -1,5 +1,5 @@
 var authConfig = {
-  version: "0.1.9c",
+  version: "0.1.9d",
   roots: [
     {
       id: "",
