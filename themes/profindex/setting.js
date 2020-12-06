@@ -1,5 +1,5 @@
 var authConfig = {
-  version: "0.1.9b",
+  version: "0.1.9c",
   roots: [
     {
       id: "",
@@ -20,7 +20,7 @@ var authConfig = {
 };
 var themeOptions = {
   // en/zh-chs/zh-cht
-  languages: "en",
+  languages: "es",
   render: {
     head_md: true,
     readme_md: true,

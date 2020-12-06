@@ -1,7 +1,7 @@
 // =======Options START=======
 var authConfig = {
   siteName: "Profindex",
-  version: "0.1.9b", 
+  version: "0.1.9c", 
   
   client_id: "227728981055-evpiicg2i5ugqa5kd07kb4f1f01iniod.apps.googleusercontent.com",
   client_secret: "39r_gtfjJRyhisS_4kiDd7OO",
@@ -40,7 +40,7 @@ var authConfig = {
 var themeOptions = {
   cdn: "https://cdn.jsdelivr.net/gh/kadma/profindex",
   tema: "profindex",
-  version: "0.1.9b",
+  version: "0.1.9c",
   languages: "es",
   render: {
     
@@ -101,36 +101,38 @@ function html(current_drive_order = 0, model = {}) {
   return `
   <!DOCTYPE html>
   <html>
-  <head>
-  <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/> <title>${authConfig.siteName}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"><meta name="description" content="Combining the power of Cloudflare Workers and Google Drive will allow you to index your files on the browser on Cloudflare Workers.">
-  <meta name="theme-color" content="#FF3300"><meta name="application-name" content="profindex">
-  <meta name="robots" content="index, follow"><meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="${themeOptions.cdn}@${authConfig.version}/${authConfig.version}/favicon.ico">
-  <meta name="twitter:description" content="La combinación del poder de Cloudflare Workers y Google Drive le permitirá indexar sus archivos en el navegador de Cloudflare Workers.">
-  <meta name="keywords" content="profindex, google, drive, goindex, google-drive, cloudflare-workers">
-  <meta name="twitter:title" content="Profindex"><meta name="twitter:url" content="https://google.com">
-  <link rel="shortcut icon" href="${themeOptions.cdn}@${authConfig.version}/${authConfig.version}/favicon.ico">
-  <meta property="og:site_name" content="Goindex"><meta property="og:type" content="website">
-  <meta property="og:image" content="${themeOptions.cdn}@${authConfig.version}/${authConfig.version}/favicon.icof">
-  <meta property="og:description" content="La combinación del poder de Cloudflare Workers y Google Drive le permitirá indexar sus archivos en el navegador de Cloudflare Workers.">
-  <meta property="og:title" content="Profindex">
-  <meta property="og:url" content="https://google.com">
-  <link rel="apple-touch-icon" href="${themeOptions.cdn}@${authConfig.version}/${authConfig.version}/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="${themeOptions.cdn}@${authConfig.version}/${authConfig.version}/favicon.ico">
-  <meta name="google-site-verification" content="OD_AXMYw-V6ID9xQUb2Wien9Yy8IJSyfBUyejYNB3CU"/>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86099016-6"></script>
-  <script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'UA-86099016-6');</script>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MR47R4M');</script>
-  <style>@import url(${themeOptions.cdn}@${themeOptions.version}/${authConfig.version}/style.min.css); </style>
-  <script>window.gdconfig=JSON.parse('${JSON.stringify({version: authConfig.version, themeOptions: themeOptions,})}'); window.themeOptions=JSON.parse('${JSON.stringify(themeOptions)}'); window.gds=JSON.parse('${JSON.stringify( authConfig.roots.map((it)=> it.name) )}'); window.MODEL=JSON.parse('${JSON.stringify(model)}'); window.current_drive_order=${current_drive_order}; </script>
-  </head>
-  <body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MR47R4M"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <div id="app"></div>
-      <script src="${themeOptions.cdn}@${themeOptions.version}/${themeOptions.tema}/app.js"></script>
-  </body>
-  </html>
+    <head>
+    <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <title>${authConfig.siteName}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="description" content="La combinación del poder de Cloudflare Workers y Google Drive le permitirá indexar sus archivos en el navegador de Cloudflare Workers.">
+    <meta name="theme-color" content="#FF3300"><meta name="application-name" content="profindex">
+    <meta name="robots" content="index, follow"><meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="${themeOptions.cdn}@${authConfig.version}/themes/${authConfig.tema}/favicon.ico">
+    <meta name="twitter:description" content="La combinación del poder de Cloudflare Workers y Google Drive le permitirá indexar sus archivos en el navegador de Cloudflare Workers.">
+    <meta name="keywords" content="profindex, google, drive, goindex, google-drive, cloudflare-workers">
+    <meta name="twitter:title" content="Profindex"><meta name="twitter:url" content="https://google.com">
+    <link rel="shortcut icon" href="${themeOptions.cdn}@${authConfig.version}/themes/${authConfig.tema}/favicon.ico">
+    <meta property="og:site_name" content="Goindex"><meta property="og:type" content="website">
+    <meta property="og:image" content="${themeOptions.cdn}@${authConfig.version}/themes/${authConfig.tema}/favicon.ico">
+    <meta property="og:description" content="La combinación del poder de Cloudflare Workers y Google Drive le permitirá indexar sus archivos en el navegador de Cloudflare Workers.">
+    <meta property="og:title" content="Profindex">
+    <meta property="og:url" content="https://google.com">
+    <link rel="apple-touch-icon" href="${themeOptions.cdn}@${authConfig.version}/themes/${authConfig.tema}/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="${themeOptions.cdn}@${authConfig.version}/themes/${authConfig.tema}/favicon.ico">
+    <meta name="google-site-verification" content="OD_AXMYw-V6ID9xQUb2Wien9Yy8IJSyfBUyejYNB3CU"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86099016-6"></script>
+    <script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'UA-86099016-6');</script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MR47R4M');</script>
+    <style>@import url(${themeOptions.cdn}@${themeOptions.version}/themes/${themeOptions.tema}/style.min.css); </style>
+    <script>window.gdconfig=JSON.parse('${JSON.stringify({version: authConfig.version, themeOptions: themeOptions,})}'); window.themeOptions=JSON.parse('${JSON.stringify(themeOptions)}'); window.gds=JSON.parse('${JSON.stringify( authConfig.roots.map((it)=> it.name) )}'); window.MODEL=JSON.parse('${JSON.stringify(model)}'); window.current_drive_order=${current_drive_order}; </script>
+    </head>
+    <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MR47R4M"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <div id="app"></div>
+        <script src="${themeOptions.cdn}@${themeOptions.version}/themes/${themeOptions.tema}/app.js"></script>
+    </body>
+    </html>
   `;
 }
 
