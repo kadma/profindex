@@ -1,7 +1,7 @@
 // =======Options START=======
 var authConfig = {
   siteName: "Profindex",
-  version: "0.1.9", 
+  version: "0.1.9a", 
   
   client_id: "227728981055-evpiicg2i5ugqa5kd07kb4f1f01iniod.apps.googleusercontent.com",
   client_secret: "39r_gtfjJRyhisS_4kiDd7OO",
@@ -40,7 +40,7 @@ var authConfig = {
 var themeOptions = {
   cdn: "https://cdn.jsdelivr.net/gh/kadma/profindex",
   tema: "profindex",
-  version: "0.1.9",
+  version: "0.1.9a",
   languages: "es",
   render: {
     
