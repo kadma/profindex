@@ -9,10 +9,7 @@
 <img alt="goindex-softwareheritage.org" src="https://archive.softwareheritage.org/badge/origin/https://github.com/Unipisa/CMM/"/>
 <img alt="Principal" src="https://img.shields.io/github/repo-size/kadma/profindex">
 
-
-
 </div>
----
 
 Google Drive Directory Index  
 Combinando el poder de [Cloudflare Workers](https://workers.cloudflare.com/) y [Google Drive](https://www.google.com/drive/) le permitirá indexar sus archivos en el navegador en Cloudflare Workers.   
@@ -25,18 +22,13 @@ y [alx-xlx/goindex](https://github.com/alx-xlx/goindex) todos los creditos para 
 # Version
 
 
-## 1. [Aicirou/goindex-theme-acrou](https://github.com/Aicirou/goindex-theme-acrou)
+## [Profindex](https://github.com/Aicirou/goindex-theme-acrou)
 
+Script profindex: [index.js](https://raw.githubusercontent.com/kadma/profindex/V1/goindex-acrou/go2index/index.js)
 
-Worker Script (Dark Mode) : [index.js](https://raw.githubusercontent.com/alx-xlx/goindex/31fabf3d7ff221ff34aaaf23e63a1a5a49e40b4f/goindex-acrou/go2index/index.js)
+[Demo](https://goindex.teamsdrives.workers.dev)
 
-Worker Script (Multiple Google Accounts) : [index-multiple-accounts.js](https://github.com/alx-xlx/goindex/blob/master/goindex-acrou/go2index/index-multiple-accounts.js)
-
-Demo - [goindex.teamsdrives.workers.dev](https://goindex.teamsdrives.workers.dev)
-
-Copy the [index.js](https://raw.githubusercontent.com/alx-xlx/goindex/31fabf3d7ff221ff34aaaf23e63a1a5a49e40b4f/goindex-acrou/go2index/index.js) script to [workers.dev](https://workers.cloudflare.com/) and edit `client_id`, `client_secret`, `refresh_token` with yours
-
-OR
+Copia el contrenido de [index.js](https://raw.githubusercontent.com/kadma/profindex/V1/goindex-acrou/go2index/index.js) en [workers.dev](https://workers.cloudflare.com/) y edita `client_id`, `client_secret`, `refresh_token` con tus datos
 
 ### Profindex Generador de código automático
 https://creador.gd0.me/
@@ -53,10 +45,12 @@ Simplemente visita [aqui](https://creador.gd0.me/) versión para generar automá
 
 
 
+
+
 ## Teamdrives Gratis
 Obtenga unidades compartidas de Google gratis
 
--https://avcen.tech/
+[Aqui](https://avcen.tech/almacenamiento/)
 
 
 ## Créditos - Autores originales
