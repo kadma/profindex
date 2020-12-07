@@ -1,6 +1,6 @@
 <div align="center">
 <h1>profindex</h1>
-<img src="https://github.com/kadma/profindex/raw/master/themes/logo.png" alt="profindex" height="">
+<img src="https://github.com/kadma/profindex/raw/V1/themes/logo.png" alt="profindex" height="">
 
 </div>
 <div align="center">
@@ -22,7 +22,7 @@ Combinando el poder de [Cloudflare Workers](https://workers.cloudflare.com/) y [
 Basado en  [yanzai/goindex](https://github.com/yanzai/goindex/)
 y [alx-xlx/goindex](https://github.com/alx-xlx/goindex) todos los creditos para ellos y sus trabajos
 
-# Versions
+# Version
 
 
 ## 1. [Aicirou/goindex-theme-acrou](https://github.com/Aicirou/goindex-theme-acrou)
@@ -38,12 +38,12 @@ Copy the [index.js](https://raw.githubusercontent.com/alx-xlx/goindex/31fabf3d7f
 
 OR
 
-### GoIndex Auto Code Builder
+### Profindex Generador de código automático
 https://creador.gd0.me/
 
 Api propia
 
-Simplemente visita [this](https://creador.gd0.me/) Versión para generar automáticamente su `index.js` sin tener que editar nada manualmente.
+Simplemente visita [aqui](https://creador.gd0.me/) versión para generar automáticamente su `index.js` sin tener que editar nada manualmente.
 
 ### [List View - Dark Mode](https://goindex.teamsdrives.workers.dev)
 ![goindex-list](https://i.imgur.com/Y9pJo1V.png)
@@ -53,13 +53,13 @@ Simplemente visita [this](https://creador.gd0.me/) Versión para generar automá
 
 
 
-## Free Teamdrives
-Get free Google Shared Drives
+## Teamdrives Gratis
+Obtenga unidades compartidas de Google gratis
 
 -https://avcen.tech/
 
 
-## Credits - Original Authors
+## Créditos - Autores originales
 
 goindex-theme-acrou - [Aicirou](https://github.com/Aicirou/goindex-theme-acrou)
 
