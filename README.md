@@ -1,13 +1,13 @@
 <div align="center">
 <h1>profindex</h1>
-<img src="https://github.com/alx-xlx/goindex/raw/master/themes/logo.png" alt="profindex" height="">
+<img src="https://github.com/kadma/profindex/raw/master/themes/logo.png" alt="profindex" height="">
 
 </div>
 <div align="center">
 
 <img alt="goindex-license" src="https://img.shields.io/badge/Open_source-MIT-red.svg?logo=git&logoColor=green"/>
 <img alt="goindex-softwareheritage.org" src="https://archive.softwareheritage.org/badge/origin/https://github.com/Unipisa/CMM/"/>
-<img alt="Principal" src="https://img.shields.io/github/repo-size/alx-xlx/goindex">
+<img alt="Principal" src="https://img.shields.io/github/repo-size/kadma/profindex">
 
 
 
@@ -15,12 +15,12 @@
 ---
 
 Google Drive Directory Index  
-Combining the power of [Cloudflare Workers](https://workers.cloudflare.com/) and [Google Drive](https://www.google.com/drive/) will allow you to index you files on the browser on Cloudflare Workers.    
+Combinando el poder de [Cloudflare Workers](https://workers.cloudflare.com/) y [Google Drive](https://www.google.com/drive/) le permitirá indexar sus archivos en el navegador en Cloudflare Workers.   
 
-`index.js` is the content of the Workers script.  
+`index.js` Es el contenido
 
 Basado en  [yanzai/goindex](https://github.com/yanzai/goindex/)
-y [alx-xlx/goindex](https://github.com/alx-xlx/goindex)
+y [alx-xlx/goindex](https://github.com/alx-xlx/goindex) todos los creditos para ellos y sus trabajos
 
 # Versions
 
@@ -43,7 +43,7 @@ https://creador.gd0.me/
 
 Api propia
 
-Simply visit [this](https://creador.gd0.me/) Modified (only for Dark Mode) version to automatically generate your `index.js` without having to manually edit anything.
+Simplemente visita [this](https://creador.gd0.me/) Versión para generar automáticamente su `index.js` sin tener que editar nada manualmente.
 
 ### [List View - Dark Mode](https://goindex.teamsdrives.workers.dev)
 ![goindex-list](https://i.imgur.com/Y9pJo1V.png)
@@ -53,20 +53,10 @@ Simply visit [this](https://creador.gd0.me/) Modified (only for Dark Mode) versi
 
 
 
-## Deployment  
-1.Install `rclone` software locally  
-2.Follow [https://rclone.org/drive/]( https://rclone.org/drive/) bind a drive  
-3.Execute the command`rclone config file` to find the file `rclone.conf` path  
-4.Open `rclone.conf`,find the configuration `root_folder_id` and `refresh_token`  
-5.Download index.js in https://github.com/donwa/goindex and fill in root and refresh_token  
-6.Deploy the code to [Cloudflare Workers](https://www.cloudflare.com/)
-
 ## Free Teamdrives
 Get free Google Shared Drives
 
 -https://avcen.tech/
-
-
 
 
 ## Credits - Original Authors
